@@ -1,0 +1,305 @@
+
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@900&display=swap');
+html, body {
+  height: 100%;
+}
+
+body {
+  
+  color: #252934;
+  background: #fafafa;
+  font-size: 62.5%;
+  font-family: 'Overlock', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+a,
+a:visited {
+  color: #252934;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+a:hover,
+a:active {
+  color: #f300b4;
+}
+
+
+
+
+
+
+
+#navbar {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar.bg-active {
+  background: #181d23;
+}
+
+#navbar .nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  padding: 0 2rem;
+}
+
+#navbar .brand {
+  font-size: 1.6rem;
+  color: #fafafa;
+  cursor: default;
+}
+
+/***** Menu Button *****/
+.menu-button {
+  position: relative;
+  height: 22px;
+  width: 30px;
+  outline: none;
+}
+
+.menu-button span,
+.menu-button span::before,
+.menu-button span::after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: #fafafa;
+  transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.menu-button span {
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.menu-button span::before {
+  top: -8px;
+}
+
+.menu-button span::after {
+  top: 8px;
+}
+
+.menu-button:hover > span,
+.menu-button:hover > span::before,
+.menu-button:hover > span::after {
+  background: #f300b4;
+}
+
+.menu-button.active > span  {
+  background: transparent;
+}
+
+.menu-button.active > span::before  {
+  transform: rotate(-225deg);
+  top: 0px;
+}
+
+.menu-button.active > span::after  {
+  transform: rotate(225deg);
+  top: 0px;
+}
+
+@media only screen and (max-width: 849px) {
+  #navbar {
+    background: #181d23aa;
+  }
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************
+ *****************
+   CONTACT STYLES
+ *****************
+ *****************/
+
+#contact {
+  background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
+  clip-path: polygon(0 0, 20% );
+  color: #fafafa;
+  
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  z-index: 1;
+}
+
+#contact .container {
+  width: 70%;
+  max-width: 1200px;
+  padding: 10vh 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*****************
+ *****************
+   FOOTER STYLES
+ *****************
+ *****************/
+
+footer {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: #fafafa;
+  z-index: 0;
+}
+
+footer .wrapper {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  max-width: 1400px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 649px) {
+  footer .wrapper {
+    flex-direction: column;
+  }
+
+  footer .wrapper h3 {
+    padding-bottom: .8rem;
+  }
+}
+
+
+
+
+#navbar .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  color:black;
+  transform: translateY(0);
+  transition: transform 0.6s ease;
+}
+
+#navbar .header2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: gray;
+  color: rosybrown;
+  transform: translateY(10);
+  transition: transform 6s ease;
+  animation: myanimation 3s;
+}
+ @keyframes myanimation {
+  0% {
+    background-color: transparent;
+    color: transparent;
+  }
+  35% {
+    background-color: gray;
+    color: rosybrown;
+  }
+  100% {
+    background-color: gray;
+    color: rosybrown;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

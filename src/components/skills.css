@@ -1,0 +1,29 @@
+#skills .title {
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right:53%;
+    
+   
+  }
+  
+  #skills .title h3 {
+    font-size: 2.4rem;
+  }
+  
+  #skills .separator {
+    background: #f300b4;
+  
+    width: 120px;
+    height: 2px;
+  
+   
+  
+  
+  }
+  #skills {
+   padding:10;
+    padding-left: 32%;
+    
+  }
