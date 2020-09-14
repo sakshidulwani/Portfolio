@@ -19,7 +19,6 @@ const About = props => {
                       </p>
                       <p>
                         I really enjoy development as well as learning to make things pretty and easy to use. 
-
                        I can't stop learning new things; the more, the better. I also love dancing , a hobby.
                        For the front-end I usually work with Javascript, including
                         popular framework like ReactJS . I also make the web pretty by using 

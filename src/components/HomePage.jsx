@@ -10,13 +10,10 @@ const HomePage = props => {
           <h1>
            <br/>
            
-          <span className="line">Hy,Sakshi Dulwani here</span>
-            
-            <span className="line">I am a</span>
-            <span className="line">React Developer </span>
-            <span className="line">
-              
-            </span>
+          <span className="line">Hy, Sakshi Dulwani here</span>
+          <span className="line">I am a</span>
+          <span className="line">Web Developer </span>
+          
           </h1>
          
         </div>

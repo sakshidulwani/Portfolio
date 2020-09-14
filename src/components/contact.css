@@ -1,0 +1,16 @@
+#contact .social a {
+    color: #000;
+    cursor: pointer;
+}
+
+#contact .social a:hover {
+    color: #f300b4;
+}
+
+#contact {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    z-index: 1;
+  }

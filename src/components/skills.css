@@ -3,27 +3,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right:53%;
-    
+   text-align: center;
    
   }
   
   #skills .title h3 {
     font-size: 2.4rem;
+    color: #fff;
   }
   
   #skills .separator {
     background: #f300b4;
-  
     width: 120px;
     height: 2px;
-  
-   
-  
-  
   }
+
   #skills {
    padding:10;
-    padding-left: 32%;
+    padding-bottom: 10%;
+    padding-top: 8%;
+    background-color: #1B2029;
     
+  }
+
+  .progress_bar {
+    width: 100px;
   }

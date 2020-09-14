@@ -128,21 +128,9 @@
     font-weight: normal;
     font-style: italic;
     color: #fafafa;
-    line-height: 3rem;
   }
   
-  #welcome-section .container h1 .line:first-child {
-    margin-left: 1rem;
-  }
   
-  #welcome-section .container h1 .line:last-child {
-    margin-left: 2rem;
-  }
-  
-  #welcome-section .container .buttons {
-    display: flex;
-    margin-top: 1rem;
-  }
   
   #welcome-section .container .buttons a,
   #welcome-section .container .buttons a:visited {

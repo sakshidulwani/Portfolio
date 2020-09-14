@@ -1,19 +1,32 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 
-const Contact = props => {
+import './contact.css';
+function Contact(props) {
+
+    const year = new Date().getFullYear();
+
     return (
-      <section id="contact">
-        <div className="container">
-        <p className="text-white ">
-             <i className="fa fa-2x fa-envelope"></i> E-mail:- dulwanisakshi@gmail.com</p>
-        <div className="social d-flex justify-content-center">
-        <a className="mx-2" href="https://gmail.com/dulwanisakshi@gmail.com"><i className="fa fa-2x fa-envelope" style={{color:"white"}}></i></a>
-             <a className="mx-2" href="https://www.instagram.com/sakshidulwani"><i className="fa fa-2x fa-instagram" style={{color:"white"}}></i></a>
-             <a className="mx-2" href="https://github.com/sakshidulwani"><i className="fa fa-2x fa-github" style={{color:"white"}}></i></a>
-             <a className="mx-2" href="https://www.linkedin.com/in/Sakshi-Dulwani"><i className="fa fa-2x fa-linkedin" style={{color:"white"}}></i></a>
-          </div>
-        </div>
-      </section>
+        <Container fluid id="contact" className="text-center">
+           
+            <Row className="">
+
+               <Col className="social py-3" lg={12}>
+                  <div>
+                  <a className="mx-4" href="https://www.instagram.com/sakshidulwani"><i className="fab fa-4x fa-instagram-square"/></a>
+                  <a className="mx-4" href="https://www.linkedin.com/in/sakshi-dulwani-4123261aa"><i className="fab fa-4x fa-linkedin"/></a>
+                  <a className="mx-4" href="https://github.com/sakshidulwani"><i className="fab fa-4x fa-github-square"/></a>
+                  </div>
+               </Col>
+
+               <Col lg={12} className="">
+                 <p className="" >&copy;Sakshi Dulwani {year}</p>
+               </Col>
+
+            </Row>
+
+        </Container>
     );
-  };
-  export default Contact;
+}
+
+export default Contact;
